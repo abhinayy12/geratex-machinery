@@ -19,10 +19,10 @@ export default function Navbar({ t, locale }: NavbarProps) {
         <Image
           src="/images/logo.png"
           alt="Geratex Machinery Pvt. Ltd."
-          width={240}
-          height={52}
+          width={300}
+          height={64}
           priority
-          className="h-10 w-auto object-contain"
+          className="h-21 w-auto object-contain"
         />
         </Link>
 
