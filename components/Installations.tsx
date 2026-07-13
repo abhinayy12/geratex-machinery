@@ -2,6 +2,7 @@ import WorldMap from "./WorldMap";
 
 type InstallationsProps = {
   data: {
+    eyebrow: string;
     title: string;
     text: string;
     quote: string;
@@ -15,7 +16,7 @@ export default function Installations({ data }: InstallationsProps) {
       <div className="mx-auto max-w-7xl">
         <div className="mb-14 max-w-3xl text-left">
           <p className="mb-5 text-sm font-black uppercase tracking-[0.35em] text-[#e87524]">
-            03 / Global Reach
+            {data.eyebrow}
           </p>
 
           <h2 className="text-5xl font-black tracking--0.05em text-[#20242c] md:text-7xl">
@@ -35,13 +36,13 @@ export default function Installations({ data }: InstallationsProps) {
           </div>
         </div>
 
-        <div className="mx-auto mt-12 max-w-4xl rounded-4xl border border-orange-100 bg-white p-8 text-center shadow-[0_20px_60px_rgba(88,56,32,0.10)]">
+        {/* <div className="mx-auto mt-12 max-w-4xl rounded-4xl border border-orange-100 bg-white p-8 text-center shadow-[0_20px_60px_rgba(88,56,32,0.10)]">
           <p className="text-lg italic leading-8 text-gray-700">
             “{data.quote}”
           </p>
 
           <p className="mt-4 font-bold text-[#e87524]">{data.author}</p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

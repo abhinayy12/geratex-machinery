@@ -5,6 +5,9 @@ import WhyGeratex from "@/components/WhyGeratex";
 import Installations from "@/components/Installations";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
+import About from "@/components/About";
+import Applications from "@/components/Applications";
 import { translations, Locale } from "@/data/translations";
 
 type PageProps = { params: Promise<{ locale: Locale }> };
@@ -18,9 +21,15 @@ export default async function Home({ params }: PageProps) {
     <main className="min-h-screen bg-[#fffaf4] text-[#1e232b]">
       <Navbar t={t} locale={selectedLocale} />
       <Hero t={t.hero} />
-      <Products data={t.products} />
+      <About data={t.about} />
+      <Products data={t.products} locale={selectedLocale} />
+      <Applications
+        data={t.applications}
+        locale={selectedLocale}
+      />
       <WhyGeratex data={t.why} />
       <Installations data={t.installations} />
+      <Testimonials data={t.testimonials} />
       <Contact data={t.contact} />
       <Footer locale={selectedLocale} />
     </main>
