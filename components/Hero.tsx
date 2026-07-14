@@ -49,7 +49,7 @@ export default function Hero({ t }: HeroProps) {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="/en/products" className="btn-primary">
+            <a href="#products" className="btn-primary">
               {t.button}
             </a>
 
